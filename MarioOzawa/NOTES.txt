@@ -1,0 +1,74 @@
+﻿
+Chú ý: RECT trong DX có các thuộc tính khác vs trong XNA, thay thế width và height 
+= bottom và right
+
+RECT
+{
+	top,
+	left,
+	right,
+	bottom
+}
+
+
+/*
+	ID3DXMatrixStack* _mxstack;
+	D3DXCreateMatrixStack(0, &_mxstack);
+	_mxstack->LoadIdentity();
+	_mxstack->LoadMatrix(&mat);
+	*/
+
+
+	
+
+void Text::Render(char* text, float percentSize, int x, int y)
+{
+	//init
+	if(Text::_sprText == NULL)
+	{
+		Text::_sprText = new Sprite(ResourceMng::GetInst()->GetTexture("image/imgChar.png"), 0);
+	}
+
+	int len = strlen(text);
+	int index = 0;
+	//
+	for(int i = 0; i < len; ++i)
+	{
+		index = text[i] - ' ';
+		Text::_sprText->SelectIndex(index);
+		Text::_sprText->Render(x + i * _charW, y + i * _charH);
+	}
+}
+
+
+/*
+#define SOUND_ABOUT_STATE		 "sound/b_about_state.wav"
+#define SOUND_GAME1				 "sound/b_game1.wav"
+#define SOUND_GAME2				 "sound/b_game2.wav"
+#define SOUND_LOADING_STATE		 "sound/b_loading_state.wav"
+#define SOUND_LOSE_STATE		 "sound/b_lose_state.wav"
+#define SOUND_MENU				 "sound/b_menu.wav"
+#define SOUND_OPTION_STATE		 "sound/b_option_state.wav"
+#define SOUND_WIN_STATE			 "sound/b_win_state.wav"
+#define SOUND_1UP				 "sound/e_1up.wav"
+#define SOUND_BOSS_BEFORE_DIE	 "sound/e_boss_before_die.wav"
+#define SOUND_BOSS_DIE			 "sound/e_boss_die.wav"
+#define SOUND_BOSS_FIRE			 "sound/e_boss_fire.wav"
+#define SOUND_BOSS_HURT			 "sound/e_boss_hurt.wav"
+#define SOUND_BRICK_UP			 "sound/e_brick_up.wav"
+#define SOUND_BROKEN			 "sound/e_broken.wav"
+#define SOUND_CLICK				 "sound/e_click.wav"
+#define SOUND_COIN				 "sound/e_coin.wav"
+#define SOUND_DEATH				 "sound/e_death.wav"
+#define SOUND_DEATH_SHOT		 "sound/e_death_shot.wav"
+#define SOUND_EAT				 "sound/e_eat.wav"
+#define SOUND_GROW				 "sound/e_grow.wav"
+#define SOUND_JUMP				 "sound/e_jump.wav"
+#define SOUND_MUSH_DIE			 "sound/e_mush_die.wav"
+#define SOUND_PIPE				 "sound/e_pipe.wav"
+#define SOUND_SHOT				 "sound/e_shot.wav"
+#define SOUND_SLIDE				 "sound/e_slide.wav"
+#define SOUND_TOUCH_TIRTLE		 "sound/e_touch_tirtle.wav"
+#define SOUND_UP				 "sound/e_up.wav"
+#define SOUND_WIN				 "sound/e_win.wav"
+*/

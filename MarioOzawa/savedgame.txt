@@ -1,0 +1,16 @@
+0//file map
+900//gold
+3//life
+100//exp
+1//curForm(0, 1, 2)
+0//nextform(0, 1, 2)
+2//state(0, ... 12)
+235//timeingame
+5//mario.x / TILE
+4//mario.y / TILE
+11 5 4 1//objectID, x, y(in TILE), state
+11 3 4
+13 2 4
+
+
+

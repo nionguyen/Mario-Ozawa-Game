@@ -1,0 +1,88 @@
+﻿Truy cập từng Pixel
+///////////////////////////////////////////////////
+
+        private Bitmap ToBinaryLocBits(Bitmap bm, Byte band)
+        {
+            Bitmap bitmap = new Bitmap(bm);
+            Rectangle bitmapRect = new Rectangle(0, 0, bitmap.Width, bitmap.Height);
+            BitmapData bitmapData = bitmap.LockBits(bitmapRect, ImageLockMode.ReadWrite, bitmap.PixelFormat);
+            IntPtr ptrBitmapDataOnMemory = bitmapData.Scan0;    //con trỏ đến dòng pixel đầu tiên trong Bitmap
+            Int32 numberBytesOfBitMap = bitmapData.Stride * bitmap.Height;    //tổng số pixel trong Bitmap
+            Byte[] rgbValuesArrayOfBitmap = new Byte[numberBytesOfBitMap];
+            Marshal.Copy(ptrBitmapDataOnMemory, rgbValuesArrayOfBitmap, 0, numberBytesOfBitMap); //Copy ô nhớ từ ptrBitmapData và rgbValuesArrayOfBitmap bắt đầu từ 0 và lengh = numberBytesOfBitMap
+            Byte byteRed;
+            for (int i = 0; i < rgbValuesArrayOfBitmap.Length - 1; i += 4)
+            {
+                byteRed = rgbValuesArrayOfBitmap[i];
+                if (byteRed < band)
+                {
+                    rgbValuesArrayOfBitmap[i + 0] = 0;
+                    rgbValuesArrayOfBitmap[i + 1] = 0;
+                    rgbValuesArrayOfBitmap[i + 2] = 0;
+                }
+                else
+                {
+                    rgbValuesArrayOfBitmap[i + 0] = 255;
+                    rgbValuesArrayOfBitmap[i + 1] = 255;
+                    rgbValuesArrayOfBitmap[i + 2] = 255;
+                }
+            }
+            Marshal.Copy(rgbValuesArrayOfBitmap, 0, ptrBitmapDataOnMemory, numberBytesOfBitMap);
+            bitmap.UnlockBits(bitmapData);
+            return bitmap;
+        }
+///////////////////////////////////////////////////
+PictureBoxMouseClick
+
+private void _PictureBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            Graphics _g = Graphics.FromImage(_buffPic);
+            
+            _g.DrawRectangle(new Pen(Brushes.Black, 1), new Rectangle(_clickX, _clickY, _tileSize.Width, _tileSize.Height));
+            
+            _clickX = _tileSize.Width * (e.X / _tileSize.Width);
+            _clickY = _tileSize.Height * (e.Y / _tileSize.Height);
+            _board[e.Y / _tileSize.Height, e.X / _tileSize.Width] = _curObject;
+            
+            Image _img = null;
+            switch (_curObject)
+            {
+                case (byte)EObj.NONE:
+                    _img = null;
+                    break;
+                case (byte)EObj.BRICK:
+                    _img = _bttBrick.BackgroundImage;
+                    break;
+                case (byte)EObj.MONSTER1:
+                    _img = _bttMonster1.BackgroundImage;
+                    break;
+                case (byte)EObj.MONSTER2:
+                    _img = _bttMonster2.BackgroundImage;
+                    break;
+                case (byte)EObj.MONSTER3:
+                    _img = _bttMonster3.BackgroundImage;
+                    break;
+            }
+            if (_img != null)
+            {
+                _g.FillRectangle(Brushes.Maroon, new Rectangle(_clickX, _clickY, _tileSize.Width, _tileSize.Height));
+                _g.DrawImage(_img,
+                new Rectangle(_clickX, _clickY, _tileSize.Width, _tileSize.Height),
+                new Rectangle(0, 0, 48, 48),
+                GraphicsUnit.Pixel);
+            }
+            else
+            {
+                _g.FillRectangle(Brushes.Maroon, new Rectangle(_clickX, _clickY, _tileSize.Width, _tileSize.Height));
+            }
+
+            _g.DrawRectangle(new Pen(Brushes.White, 1), new Rectangle(_clickX, _clickY, _tileSize.Width, _tileSize.Height));
+            
+            _PictureBox1.Image = _buffPic;
+        }
+
+
+
+
+
+

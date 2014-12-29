@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="manager">
+      <UniqueIdentifier>{eb1e4af1-a18e-48ea-ae87-7a0d59656655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sence">
+      <UniqueIdentifier>{3d356bed-2766-445c-ae91-90324911c20d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object">
+      <UniqueIdentifier>{308cdf67-2936-4076-b659-251db905d1c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mario">
+      <UniqueIdentifier>{17e13c1f-b113-4517-ba63-e8b42573138f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="soundplayer">
+      <UniqueIdentifier>{fefc308b-90ab-4095-8023-d6719cdd5289}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kenel">
+      <UniqueIdentifier>{ed1c4cd6-f9f0-485b-adcd-f862277d34c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RealTimeCollision">
+      <UniqueIdentifier>{bab38fd0-c05c-42d2-bef7-a32e44d48e49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\mario-ozawa\MarioOzawa\MarioOzawa.vcxproj.filters" />
+    <None Include="brick.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Brick_Break.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Bullet.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Coin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Flower.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Fungi.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgBgCredit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgBgGame.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgBgMenu.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgBgOption.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgChar.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgItemOption.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgItemPlay.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgItemQuit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgLogo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgMarioHead.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgMenuItem.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgNo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgYes.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="imgZoom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Lager.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="map.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="MarioFire.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="MarioLarger.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="MarioSmaller.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="NOTES.txt" />
+    <None Include="pipe.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Question.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="turtle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="savedgame.txt" />
+    <None Include="marioicon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\Boss.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\FireBoss.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\TreeMonster.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\mario-ozawa-game22 - Copy - Copy\MarioOzawa\MarioOzawa.vcxproj" />
+    <None Include="..\..\..\mario-ozawa-game22 - Copy - Copy\MarioOzawa\MarioOzawa.vcxproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="MarioGame.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CreditSence.cpp">
+      <Filter>sence</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSence.cpp">
+      <Filter>sence</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroSence.cpp">
+      <Filter>sence</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuSence.cpp">
+      <Filter>sence</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionSence.cpp">
+      <Filter>sence</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaySence.cpp">
+      <Filter>sence</Filter>
+    </ClCompile>
+    <ClCompile Include="ZoomSence.cpp">
+      <Filter>sence</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadTree.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadTreeNode.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TileMap.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="MapLoader.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="RECT.cpp">
+      <Filter>kenel</Filter>
+    </ClCompile>
+    <ClCompile Include="Writer.cpp">
+      <Filter>kenel</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>kenel</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundDev.cpp">
+      <Filter>soundplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="dsutil.cpp">
+      <Filter>soundplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundManager.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>soundplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="StorySence.cpp">
+      <Filter>sence</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectWorldSence.cpp">
+      <Filter>sence</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeMapSence.cpp">
+      <Filter>sence</Filter>
+    </ClCompile>
+    <ClCompile Include="LoseGameSence.cpp">
+      <Filter>sence</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionData.cpp">
+      <Filter>RealTimeCollision</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCollisionData.cpp">
+      <Filter>RealTimeCollision</Filter>
+    </ClCompile>
+    <ClCompile Include="Fungi.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="Coin.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="MyObject.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="BrickQuestion.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="BrickItem.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="BrickBreak.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="Turtle.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="Mario.cpp">
+      <Filter>mario</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeMonster.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="BossFire.cpp">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="MarioInPipeSence.cpp">
+      <Filter>sence</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dsutil.h">
+      <Filter>soundplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="dxutil.h">
+      <Filter>soundplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundDev.h">
+      <Filter>soundplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroSence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+    <ClInclude Include="CreditSence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuSence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaySence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionSence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+    <ClInclude Include="ZoomSence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+    <ClInclude Include="MapLoader.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="MarioGame.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadTreeNode.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadTree.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMap.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ISence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+    <ClInclude Include="Writer.h">
+      <Filter>kenel</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>kenel</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>kenel</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>kenel</Filter>
+    </ClInclude>
+    <ClInclude Include="Surface.h">
+      <Filter>kenel</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundManager.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>soundplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="StorySence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>kenel</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectWorldSence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+    <ClInclude Include="MarioMoveDown.h">
+      <Filter>kenel</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ChangeMapSence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+    <ClInclude Include="LoseGameSence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionData.h">
+      <Filter>RealTimeCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCollisionData.h">
+      <Filter>RealTimeCollision</Filter>
+    </ClInclude>
+    <ClInclude Include="Turtle.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="MyObject.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="Fungi.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="Coin.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="BrickQuestion.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="BrickBreak.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="BrickItem.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="Mario.h">
+      <Filter>mario</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeMonster.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="BossFire.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="MarioInPipeSence.h">
+      <Filter>sence</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MarioOzawa.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

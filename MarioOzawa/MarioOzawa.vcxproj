@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{53565E5D-7F92-4158-8760-C4EC63CFF53A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MarioOzawa</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\Include;$(IncludePath);</IncludePath>
+    <LibraryPath>..\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;dxerr.lib;dinput8.lib;dsound.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;dxerr.lib;dinput8.lib;dsound.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\mario-ozawa-game22 - Copy - Copy\MarioOzawa\MarioOzawa.vcxproj" />
+    <None Include="..\..\..\mario-ozawa\MarioOzawa\MarioOzawa.vcxproj.filters" />
+    <None Include="..\..\..\mario-ozawa-game22 - Copy - Copy\MarioOzawa\MarioOzawa.vcxproj.user" />
+    <None Include="brick.png" />
+    <None Include="Brick_Break.png" />
+    <None Include="Bullet.png" />
+    <None Include="Coin.png" />
+    <None Include="Flower.png" />
+    <None Include="Fungi.png" />
+    <None Include="icon1.ico" />
+    <None Include="image\Boss.png" />
+    <None Include="image\FireBoss.png" />
+    <None Include="image\TreeMonster.png" />
+    <None Include="imgBgCredit.png" />
+    <None Include="imgBgGame.png" />
+    <None Include="imgBgMenu.png" />
+    <None Include="imgBgOption.png" />
+    <None Include="imgChar.png" />
+    <None Include="imgItemOption.png" />
+    <None Include="imgItemPlay.png" />
+    <None Include="imgItemQuit.png" />
+    <None Include="imgLogo.png" />
+    <None Include="imgMarioHead.png" />
+    <None Include="imgMenuItem.png" />
+    <None Include="imgNo.png" />
+    <None Include="imgYes.png" />
+    <None Include="imgZoom.png" />
+    <None Include="Lager.png" />
+    <None Include="map.png" />
+    <None Include="MarioFire.png" />
+    <None Include="marioicon.ico" />
+    <None Include="MarioLarger.png" />
+    <None Include="MarioSmaller.png" />
+    <None Include="NOTES.txt" />
+    <None Include="pipe.png" />
+    <None Include="Question.png" />
+    <None Include="savedgame.txt" />
+    <None Include="turtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BackgroundManager.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="BossFire.cpp" />
+    <ClCompile Include="BrickBreak.cpp" />
+    <ClCompile Include="BrickItem.cpp" />
+    <ClCompile Include="BrickQuestion.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="ChangeMapSence.cpp" />
+    <ClCompile Include="Coin.cpp" />
+    <ClCompile Include="CollisionData.cpp" />
+    <ClCompile Include="CreditSence.cpp" />
+    <ClCompile Include="dsutil.cpp" />
+    <ClCompile Include="Fungi.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameSence.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="IntroSence.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ListCollisionData.cpp" />
+    <ClCompile Include="LoseGameSence.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MapLoader.cpp" />
+    <ClCompile Include="Mario.cpp" />
+    <ClCompile Include="MarioGame.cpp" />
+    <ClCompile Include="MarioInPipeSence.cpp" />
+    <ClCompile Include="MenuSence.cpp" />
+    <ClCompile Include="MyObject.cpp" />
+    <ClCompile Include="OptionSence.cpp" />
+    <ClCompile Include="PlaySence.cpp" />
+    <ClCompile Include="QuadTree.cpp" />
+    <ClCompile Include="QuadTreeNode.cpp" />
+    <ClCompile Include="RECT.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="SelectWorldSence.cpp" />
+    <ClCompile Include="SoundDev.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="StorySence.cpp" />
+    <ClCompile Include="TileMap.cpp" />
+    <ClCompile Include="TreeMonster.cpp" />
+    <ClCompile Include="Turtle.cpp" />
+    <ClCompile Include="Writer.cpp" />
+    <ClCompile Include="ZoomSence.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BackgroundManager.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="BossFire.h" />
+    <ClInclude Include="BrickBreak.h" />
+    <ClInclude Include="BrickItem.h" />
+    <ClInclude Include="BrickQuestion.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ChangeMapSence.h" />
+    <ClInclude Include="Coin.h" />
+    <ClInclude Include="CollisionData.h" />
+    <ClInclude Include="CreditSence.h" />
+    <ClInclude Include="dsutil.h" />
+    <ClInclude Include="dxutil.h" />
+    <ClInclude Include="Fungi.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameSence.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="IntroSence.h" />
+    <ClInclude Include="ISence.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="ListCollisionData.h" />
+    <ClInclude Include="LoseGameSence.h" />
+    <ClInclude Include="MapLoader.h" />
+    <ClInclude Include="Mario.h" />
+    <ClInclude Include="MarioGame.h" />
+    <ClInclude Include="MarioInPipeSence.h" />
+    <ClInclude Include="MarioMoveDown.h" />
+    <ClInclude Include="MenuSence.h" />
+    <ClInclude Include="MyObject.h" />
+    <ClInclude Include="OptionSence.h" />
+    <ClInclude Include="PlaySence.h" />
+    <ClInclude Include="QuadTree.h" />
+    <ClInclude Include="QuadTreeNode.h" />
+    <ClInclude Include="Rect.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="SelectWorldSence.h" />
+    <ClInclude Include="SoundDev.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="StorySence.h" />
+    <ClInclude Include="Surface.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TileMap.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="TreeMonster.h" />
+    <ClInclude Include="Turtle.h" />
+    <ClInclude Include="Writer.h" />
+    <ClInclude Include="ZoomSence.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MarioOzawa.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
